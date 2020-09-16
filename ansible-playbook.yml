@@ -1,6 +1,8 @@
-- name: Hello World Sample
+- name: 
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Ey!
       debug:
-        msg: "Hello World!"
+        msg: "Hello World! {{ items.name }}"
+      with_items:
+        - name: server1
