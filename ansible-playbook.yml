@@ -3,5 +3,4 @@
   tasks:
     - name: Ey!
       debug:
-        var : testvar01
         msg: "Hello World! {{ testvar01 }}"
