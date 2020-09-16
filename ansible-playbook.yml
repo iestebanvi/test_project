@@ -3,6 +3,5 @@
   tasks:
     - name: Ey!
       debug:
-        msg: "Hello World! {{ items.name }}"
-      with_items:
-        - name: server1
+        var : testvar01
+        msg: "Hello World! {{ testvar01 }}"
